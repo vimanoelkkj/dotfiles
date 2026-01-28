@@ -1,5 +1,5 @@
 Name = "transcode"
-NamePretty = "Transcode"
+NamePretty = "Transcritor"
 FixedOrder = true
 HideFromProviderlist = true
 Icon = ""
@@ -8,14 +8,14 @@ Parent = "tools"
 function GetEntries()
 	return {
 		{
-			Text = "Transcode video",
+			Text = "Transcrever video",
 			Icon = "",
 			Actions = {
 				["transcode-video"] = "ghostty --class=local.floating -e transcode-video",
 			},
 		},
 		{
-			Text = "Transcode image",
+			Text = "Transcrever imagem",
 			Icon = "",
 			Actions = {
 				["transcode-image"] = "ghostty --class=local.floating -e transcode-image",

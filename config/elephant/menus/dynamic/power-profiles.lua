@@ -1,5 +1,5 @@
 Name = "power-profiles"
-NamePretty = "Power profiles"
+NamePretty = "Perfis de energia"
 HideFromProviderlist = true
 Cache = false
 Action = "powerprofilesctl set %VALUE%; notify-send 'Power Profile' 'Set to %VALUE%'"

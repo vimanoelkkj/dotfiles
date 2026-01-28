@@ -1,5 +1,5 @@
 Name = "starship-themes"
-NamePretty = "Starship themes"
+NamePretty = "Temas do starship"
 HideFromProviderlist = true
 Cache = false
 Parent = "themes"

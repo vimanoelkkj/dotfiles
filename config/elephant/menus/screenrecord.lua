@@ -1,5 +1,5 @@
 Name = "screenrecord"
-NamePretty = "Screenrecord"
+NamePretty = "Gravador de tela"
 FixedOrder = true
 HideFromProviderlist = true
 Icon = ""
@@ -8,31 +8,31 @@ Parent = "capture"
 function GetEntries()
 	return {
 		{
-			Text = "Region",
+			Text = "Região",
 			Actions = {
 				["region"] = "screenrecord",
 			},
 		},
 		{
-			Text = "Region + Audio",
+			Text = "Região + Áudio",
 			Actions = {
 				["region_audio"] = "screenrecord region --with-audio",
 			},
 		},
 		{
-			Text = "Display",
+			Text = "Tela",
 			Actions = {
 				["display"] = "screenrecord output",
 			},
 		},
 		{
-			Text = "Display + Audio",
+			Text = "Tela + Áudio",
 			Actions = {
 				["display_audio"] = "screenrecord output --with-audio",
 			},
 		},
 		{
-			Text = "Display + Webcam",
+			Text = "Tela + Webcam",
 			Actions = {
 				["display_webcam"] = "screenrecord output --with-audio --with-webcam",
 			},

@@ -1,5 +1,5 @@
 Name = "cursor-themes"
-NamePretty = "Cursor themes"
+NamePretty = "Temas do cursor"
 HideFromProviderlist = true
 Cache = false
 Parent = "themes"

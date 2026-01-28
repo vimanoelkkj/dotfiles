@@ -1,5 +1,5 @@
 Name = "system-themes"
-NamePretty = "System themes"
+NamePretty = "Temas do sistema"
 HideFromProviderlist = true
 Cache = false
 Parent = "themes"

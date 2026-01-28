@@ -1,5 +1,5 @@
 Name = "fastfetch-themes"
-NamePretty = "Fastfetch themes"
+NamePretty = "Temas do fastfetch"
 HideFromProviderlist = true
 Cache = false
 Parent = "themes"

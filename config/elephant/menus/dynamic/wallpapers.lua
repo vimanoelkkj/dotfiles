@@ -1,5 +1,5 @@
 Name = "wallpapers"
-NamePretty = "Wallpapers"
+NamePretty = "Planos de fundo"
 HideFromProviderlist = true
 Cache = false
 

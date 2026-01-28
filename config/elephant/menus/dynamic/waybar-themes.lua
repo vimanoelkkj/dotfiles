@@ -1,5 +1,5 @@
 Name = "waybar-themes"
-NamePretty = "Waybar themes"
+NamePretty = "Temas da waybar"
 HideFromProviderlist = true
 Cache = false
 Parent = "themes"

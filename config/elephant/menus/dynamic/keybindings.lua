@@ -1,5 +1,5 @@
 Name = "keybindings"
-NamePretty = "Keybindings"
+NamePretty = "Teclas de atalho"
 HideFromProviderlist = true
 Cache = false
 Parent = "menu"
