@@ -3,7 +3,7 @@
 set -e
 
 DOTFILES_DIR="$HOME/.local/share/dotfiles"
-REPO_URL="https://github.com/Maciejonos/dotfiles.git"
+REPO_URL="https://github.com/vimanoelkkj/dotfiles.git"
 
 echo "=============="
 echo "Dotfiles Setup"
@@ -33,7 +33,7 @@ mkdir -p "$HOME/.local/share/dotfiles"
 
 # Clone the dotfiles repository
 echo "Cloning dotfiles repository..."
-git clone "$REPO_URL" "$DOTFILES_DIR"
+git clone -b new "$REPO_URL" "$DOTFILES_DIR"
 
 echo
 echo "Repository cloned successfully!"
