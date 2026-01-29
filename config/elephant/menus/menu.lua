@@ -54,24 +54,10 @@ function GetEntries()
             },
         },
         {
-            Text = _("Next background"),
-            Icon = "",
-            Actions = {
-                ["change-bg"] = "theme-bg-next",
-            },
-        },
-        {
             Text = _("Capture"),
             Icon = "",
             Actions = {
                 ["capture"] = "walker -t menus -m menus:capture -N",
-            },
-        },
-        {
-            Text = _("Setup"),
-            Icon = "󰉉",
-            Actions = {
-                ["setup"] = "walker -t menus -m menus:setup -N",
             },
         },
         {
