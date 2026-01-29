@@ -23,6 +23,11 @@
         "tooltip": false
     },
 
+    "tray": {
+        "icon-size": 15,
+        "spacing": 5
+    },
+
     "group/expand": {
         "orientation": "horizontal",
         "drawer": {
@@ -48,9 +53,9 @@
     "modules-right": [
         "custom/screenrecord",
         "custom/updates",
+        "tray",
         "pulseaudio",
         "network",
-        "bluetooth",
         "cpu",
         "battery",
         "custom/hypridle",
