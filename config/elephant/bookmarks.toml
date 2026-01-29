@@ -13,8 +13,3 @@ prefix = "p:"
 name = "Zen"
 command = "zen-browser"
 icon = "zen-browser"
-
-[[browsers]]
-name = "Helium"
-command = "helium-browser"
-icon = "helium-browser"

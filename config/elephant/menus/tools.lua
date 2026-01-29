@@ -15,13 +15,6 @@ function GetEntries()
 			},
 		},
 		{
-			Text = "Ollama",
-			Icon = "",
-			Actions = {
-				["ollama"] = "walker --theme menus -m menus:ollama -N",
-			},
-		},
-		{
 			Text = "Download video",
 			Icon = "",
 			Actions = {
