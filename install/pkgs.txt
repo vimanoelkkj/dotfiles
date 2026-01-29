@@ -23,12 +23,8 @@ zsh
 
 # Development
 git
-lazygit
-neovim
-visual-studio-code-bin
 
 # Browsers
-helium-browser-bin
 zen-browser-bin
 
 # Hyprland
