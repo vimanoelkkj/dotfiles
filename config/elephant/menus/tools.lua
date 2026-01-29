@@ -1,5 +1,5 @@
 Name = "tools"
-NamePretty = "tools"
+NamePretty = "Ferramentas"
 FixedOrder = true
 HideFromProviderlist = true
 Icon = ""
@@ -15,21 +15,21 @@ function GetEntries()
 			},
 		},
 		{
-			Text = "Download video",
+			Text = "Baixador de videos",
 			Icon = "",
 			Actions = {
 				["download-video"] = "ghostty --class=local.floating -e media-download",
 			},
 		},
 		{
-			Text = "Transcode",
+			Text = "Transcritor",
 			Icon = "",
 			Actions = {
 				["transcode"] = "walker --theme menus -m menus:transcode -N",
 			},
 		},
 		{
-			Text = "ISO to usb",
+			Text = "ISO para usb",
 			Icon = "",
 			Actions = {
 				["write-iso"] = "ghostty --class=local.floating -e write-iso",
@@ -43,7 +43,7 @@ function GetEntries()
 			},
 		},
 		{
-			Text = "Add a webapp",
+			Text = "Adicionar um webapp",
 			Icon = "",
 			Actions = {
 				["webapp-install"] = "ghostty --class=local.floating -e webapp-install",

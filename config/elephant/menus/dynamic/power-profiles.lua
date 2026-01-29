@@ -1,8 +1,8 @@
 Name = "power-profiles"
-NamePretty = "Power profiles"
+NamePretty = "Perfis de desempenho"
 HideFromProviderlist = true
 Cache = false
-Action = "powerprofilesctl set %VALUE%; notify-send 'Power Profile' 'Set to %VALUE%'"
+Action = "powerprofilesctl set %VALUE%; notify-send 'Perfil definido' 'para %VALUE%'"
 
 function GetEntries()
 	local entries = {}
@@ -32,7 +32,7 @@ function GetEntries()
 
 	if #entries == 0 then
 		table.insert(entries, {
-			Text = "No power profiles found",
+			Text = "Perfis de desempenho não encontrados!",
 			Value = "",
 		})
 	end

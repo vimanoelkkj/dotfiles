@@ -1,5 +1,5 @@
 Name = "fastfetch-themes"
-NamePretty = "Fastfetch themes"
+NamePretty = "Temas do Fastfetch"
 HideFromProviderlist = true
 Cache = false
 Parent = "themes"
@@ -13,7 +13,7 @@ function GetEntries()
 	local dir_check = io.open(configs_dir, "r")
 	if not dir_check then
 		table.insert(entries, {
-			Text = "Configs directory not found",
+			Text = "Diretório de configs. não encontrado!",
 			Subtext = configs_dir,
 			Value = "",
 		})
@@ -68,8 +68,8 @@ function GetEntries()
 
 	if #entries == 0 then
 		table.insert(entries, {
-			Text = "No configs found",
-			Subtext = "Check " .. configs_dir,
+			Text = "Configs. não encontradas!",
+			Subtext = "Verifique o dir. " .. configs_dir,
 			Value = "",
 		})
 	end

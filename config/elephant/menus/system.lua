@@ -1,5 +1,5 @@
 Name = "system"
-NamePretty = "System"
+NamePretty = "Sistema"
 FixedOrder = true
 HideFromProviderlist = true
 Icon = ""
@@ -8,35 +8,35 @@ Parent = "menu"
 function GetEntries()
 	return {
 		{
-			Text = "Lock",
+			Text = "Bloquear o SO",
 			Icon = "",
 			Actions = {
 				["lock"] = "pidof hyprlock || hyprlock &",
 			},
 		},
 		{
-			Text = "Suspend",
+			Text = "Suspender o SO",
 			Icon = "󰤄",
 			Actions = {
 				["suspend"] = "systemctl suspend",
 			},
 		},
 		{
-			Text = "Relaunch",
+			Text = "Reiniciar o shell",
 			Icon = "",
 			Actions = {
 				["relaunch"] = "uwsm stop",
 			},
 		},
 		{
-			Text = "Restart",
+			Text = "Reiniciar o SO",
 			Icon = "󰜉",
 			Actions = {
 				["restart"] = "systemctl reboot",
 			},
 		},
 		{
-			Text = "Shutdown",
+			Text = "Desligar o SO",
 			Icon = "󰐥",
 			Actions = {
 				["shutdown"] = "systemctl poweroff",

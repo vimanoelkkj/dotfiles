@@ -8,14 +8,14 @@ Parent = "tools"
 function GetEntries()
 	return {
 		{
-			Text = "Archive files",
+			Text = "Arquivos de backup",
 			Icon = "",
 			Actions = {
 				["backup-files"] = "ghostty --class=local.floating -e backup-files",
 			},
 		},
 		{
-			Text = "Unpack archive",
+			Text = "Restaurar backup",
 			Icon = "",
 			Actions = {
 				["backup-restore"] = "ghostty --class=local.floating -e backup-restore",

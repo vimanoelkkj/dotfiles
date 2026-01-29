@@ -1,5 +1,5 @@
 Name = "themes"
-NamePretty = "Themes"
+NamePretty = "Temas"
 FixedOrder = true
 HideFromProviderlist = true
 Icon = "󰸌"
@@ -8,35 +8,35 @@ Parent = "menu"
 function GetEntries()
 	return {
 		{
-			Text = "System theme",
+			Text = "Tema do sistema",
 			Icon = "󰸌",
 			Actions = {
 				["change-theme"] = "walker --theme menus -m menus:system-themes -N",
 			},
 		},
 		{
-			Text = "Waybar theme",
+			Text = "Tema da waybar",
 			Icon = "󰸌",
 			Actions = {
 				["change-waybar"] = "walker --theme menus -m menus:waybar-themes -N",
 			},
 		},
 		{
-			Text = "Fastfetch theme",
+			Text = "Tema do fastfetch",
 			Icon = "󰸌",
 			Actions = {
 				["change-fastfetch"] = "walker --theme menus -m menus:fastfetch-themes -N",
 			},
 		},
 		{
-			Text = "Starship theme",
+			Text = "Tema do starship",
 			Icon = "󰸌",
 			Actions = {
 				["change-starship"] = "walker --theme menus -m menus:starship-themes -N",
 			},
 		},
 		{
-			Text = "Cursor theme",
+			Text = "Tema do cursor",
 			Icon = "󰸌",
 			Actions = {
 				["change-cursor"] = "walker --theme menus -m menus:cursor-themes -N",

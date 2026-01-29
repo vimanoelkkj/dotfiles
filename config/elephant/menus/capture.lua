@@ -1,5 +1,5 @@
 Name = "capture"
-NamePretty = "Capture"
+NamePretty = "Capturar..."
 FixedOrder = true
 HideFromProviderlist = true
 Icon = ""
@@ -8,14 +8,14 @@ Parent = "menu"
 function GetEntries()
 	return {
 		{
-			Text = "Screenshot",
+			Text = "Tirar uma captura da tela",
 			Icon = "",
 			Actions = {
 				["screenshot"] = "walker -t menus -m menus:screenshots -N",
 			},
 		},
 		{
-			Text = "Record",
+			Text = "Gravar a tela",
 			Icon = "",
 			Actions = {
 				["record"] = "walker -t menus -m menus:screenrecord -N",

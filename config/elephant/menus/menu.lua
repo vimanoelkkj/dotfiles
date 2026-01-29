@@ -7,56 +7,56 @@ Description = "Menu"
 function GetEntries()
 	return {
 		{
-			Text = "Update",
+			Text = "Atualizar SO",
 			Icon = "",
 			Actions = {
 				["update"] = "ghostty --class=local.floating -e update-perform",
 			},
 		},
 		{
-			Text = "Install package",
+			Text = "Instalar um software",
 			Icon = "󰣇",
 			Actions = {
 				["manage-pkg"] = "ghostty --class=local.floating -e pkg-install",
 			},
 		},
 		{
-			Text = "Remove package",
+			Text = "Remover um software",
 			Icon = "󰭌",
 			Actions = {
 				["manage-pkg"] = "ghostty --class=local.floating -e pkg-remove",
 			},
 		},
 		{
-			Text = "Change themes",
+			Text = "Mudar tema",
 			Icon = "󰸌",
 			Actions = {
 				["change-themes"] = "walker -t menus -m menus:themes -N",
 			},
 		},
 		{
-			Text = "Capture",
+			Text = "Capturar...",
 			Icon = "",
 			Actions = {
 				["capture"] = "walker -t menus -m menus:capture -N",
 			},
 		},
 		{
-			Text = "Tools",
+			Text = "Ferramentas",
 			Icon = "",
 			Actions = {
 				["tools"] = "walker -t menus -m menus:tools -N",
 			},
 		},
 		{
-			Text = "Keybindings",
+			Text = "Teclas de atalho",
 			Icon = "",
 			Actions = {
 				["keybindings"] = "walker -t menus -m menus:keybindings -N",
 			},
 		},
 		{
-			Text = "System",
+			Text = "Sistema",
 			Icon = "󰐥",
 			Actions = {
 				["system"] = "walker -t menus -m menus:system -N",

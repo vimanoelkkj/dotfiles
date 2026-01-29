@@ -1,5 +1,5 @@
 Name = "brightness"
-NamePretty = "Brightness"
+NamePretty = "Brilho"
 HideFromProviderlist = true
 FixedOrder = true
 Cache = true

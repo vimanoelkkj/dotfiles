@@ -1,5 +1,5 @@
 Name = "keybindings"
-NamePretty = "Keybindings"
+NamePretty = "Teclas de atalho"
 HideFromProviderlist = true
 Cache = false
 Parent = "menu"
@@ -28,7 +28,7 @@ function GetEntries()
 	local test_file = io.open(config_file, "r")
 	if not test_file then
 		table.insert(entries, {
-			Text = "Error: Keybindings file not found",
+			Text = "Erro!: Arquivo de configs. de keybinds não encontrado!",
 			Subtext = config_file,
 			Value = "",
 		})
@@ -118,8 +118,8 @@ function GetEntries()
 
 	if #entries == 0 then
 		table.insert(entries, {
-			Text = "No keybindings found",
-			Subtext = "Check your Hyprland config",
+			Text = "Keybinds não encontradas!",
+			Subtext = "Verifique as configs. do seu hyprland.",
 			Value = "",
 		})
 	end

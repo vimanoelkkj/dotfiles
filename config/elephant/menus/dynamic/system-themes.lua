@@ -1,5 +1,5 @@
 Name = "system-themes"
-NamePretty = "System themes"
+NamePretty = "Temas do sistema"
 HideFromProviderlist = true
 Cache = false
 Parent = "themes"
@@ -49,7 +49,7 @@ function GetEntries()
 
 	if #entries == 0 then
 		table.insert(entries, {
-			Text = "No themes found",
+			Text = "Temas não encontrados!",
 			Subtext = "Check " .. themes_dir,
 			Value = "",
 		})

@@ -1,5 +1,5 @@
 Name = "cursor-themes"
-NamePretty = "Cursor themes"
+NamePretty = "Temas do cursor"
 HideFromProviderlist = true
 Cache = false
 Parent = "themes"
@@ -56,7 +56,7 @@ function GetEntries()
 						Actions = {
 							apply = "hyprctl setcursor '"
 								.. theme_name
-								.. "' 24 && notify-send 'Cursor Theme' 'Set to "
+								.. "' 24 && notify-send 'Tema do cursor' 'definido para "
 								.. display_name
 								.. "'",
 						},
@@ -73,7 +73,7 @@ function GetEntries()
 
 	if #entries == 0 then
 		table.insert(entries, {
-			Text = "No cursor themes found",
+			Text = "Nao foram encontrado temas para o cursor",
 			Subtext = "Check /usr/share/icons or ~/.local/share/icons",
 			Value = "",
 		})

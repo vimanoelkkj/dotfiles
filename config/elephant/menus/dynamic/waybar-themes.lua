@@ -1,5 +1,5 @@
 Name = "waybar-themes"
-NamePretty = "Waybar themes"
+NamePretty = "Temas da waybar"
 HideFromProviderlist = true
 Cache = false
 Parent = "themes"
@@ -14,7 +14,7 @@ function GetEntries()
 	local dir_check = io.open(themes_dir, "r")
 	if not dir_check then
 		table.insert(entries, {
-			Text = "Themes directory not found",
+			Text = "Diretório de tema não encontrado!",
 			Subtext = themes_dir,
 			Value = "",
 		})
@@ -65,7 +65,7 @@ function GetEntries()
 
 	if #entries == 0 then
 		table.insert(entries, {
-			Text = "No themes found",
+			Text = "Temas não encontrados!",
 			Subtext = "Check " .. themes_dir,
 			Value = "",
 		})

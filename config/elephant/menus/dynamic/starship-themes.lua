@@ -1,5 +1,5 @@
 Name = "starship-themes"
-NamePretty = "Starship themes"
+NamePretty = "Temas do starship"
 HideFromProviderlist = true
 Cache = false
 Parent = "themes"
@@ -13,7 +13,7 @@ function GetEntries()
 	local dir_check = io.open(configs_dir, "r")
 	if not dir_check then
 		table.insert(entries, {
-			Text = "Configs directory not found",
+			Text = "Diretório de configs. não encontrado!",
 			Subtext = configs_dir,
 			Value = "",
 		})

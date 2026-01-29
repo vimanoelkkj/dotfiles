@@ -58,7 +58,7 @@
     "format": "{icon}",
     "on-click": "ghostty --class=local.wiremix -e wiremix",
     "on-click-right": "pamixer -t",
-    "tooltip-format": "Playing at {volume}%",
+    "tooltip-format": "Volume {volume}%",
     "format-muted": "",
     "format-icons": {
       "default": [
