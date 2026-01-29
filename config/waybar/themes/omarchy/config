@@ -36,7 +36,7 @@
     // Modules Left
     "modules-left": [
         "hyprland/workspaces",
-        "custom/filemanager"
+        "custom/spotify"
     ],
 
     // Modules Center

@@ -30,7 +30,7 @@
             "transition-to-left": true,
             "click-to-reveal": true
         },
-        "modules": ["custom/expand", "custom/filemanager"],
+        "modules": ["custom/expand", "custom/spotify"],
     },
 
     // Modules Left
