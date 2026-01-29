@@ -33,7 +33,7 @@ mkdir -p "$HOME/.local/share/dotfiles"
 
 # Clone the dotfiles repository
 echo "Cloning dotfiles repository..."
-git clone "$REPO_URL" "$DOTFILES_DIR"
+git clone -b test "$REPO_URL" "$DOTFILES_DIR"
 
 echo
 echo "Repository cloned successfully!"
