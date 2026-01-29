@@ -10,7 +10,7 @@ window#waybar {
 }
 
 .modules-left {
-    padding: 7px;
+    padding: 3px;
     margin: 10 0 2 10;
     border-radius: 10px;
     background: alpha(@background, 0.8);
@@ -18,15 +18,15 @@ window#waybar {
 }
 
 .modules-center {
-    padding: 7px;
-    margin: 10 0 2 0;
+    padding: 5px;
+    margin: 10 10 2 0;
     border-radius: 10px;
     background: alpha(@background, 0.8);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
 }
 
 .modules-right {
-    padding: 7px;
+    padding: 3px;
     margin: 10 10 2 0;
     border-radius: 10px;
     background: alpha(@background, 0.8);
@@ -80,7 +80,7 @@ tooltip {
 #custom-updates:hover,
 #custom-hypridle:hover,
 #custom-brightness:hover,
-#custom-filemanager:hover,
+#custom-spotify:hover,
 #custom-screenrecord:hover,
 #battery:hover,
 #network:hover,
@@ -94,7 +94,7 @@ tooltip {
 
 #custom-hypridle,
 #custom-brightness,
-#custom-filemanager,
+#custom-spotify,
 #bluetooth,
 #battery,
 #network,

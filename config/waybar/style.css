@@ -1,64 +1,135 @@
 @import "../../.local/share/dotfiles/current/theme/waybar.css";
 
 * {
-    background-color: transparent;
-    color: @foreground;
-
-    border: none;
-    border-radius: 0;
-    min-height: 0;
     font-family: CaskaydiaMono Nerd Font;
     font-size: 16px;
 }
 
 window#waybar {
-    background-color: alpha(@background, 0.9);
+    all: unset;
 }
 
 .modules-left {
-    margin: 8px 0px 8px 10px;
+    padding: 3px;
+    margin: 10 0 2 10;
+    border-radius: 10px;
+    background: alpha(@background, 0.8);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+}
+
+.modules-center {
+    padding: 5px;
+    margin: 10 10 2 0;
+    border-radius: 10px;
+    background: alpha(@background, 0.8);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
 }
 
 .modules-right {
-    margin: 8px 10px 8px 0px;
+    padding: 3px;
+    margin: 10 10 2 0;
+    border-radius: 10px;
+    background: alpha(@background, 0.8);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
 }
 
+#workspaces {
+    padding: 0px 5px;
+}
 #workspaces button {
-    all: initial;
-    padding: 0 6px;
-    margin: 0 1.5px;
-    min-width: 9px;
+    all: unset;
+    padding: 0px 5px;
+    color: alpha(@foreground, 0.25);
+    transition: all 0.2s ease;
 }
-
+#workspaces button:hover {
+    color: alpha(@foreground, 0.8);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
+    transition: all 1s ease;
+}
+#workspaces button.active {
+    color: @foreground;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
 #workspaces button.empty {
-    opacity: 0.5;
+    color: rgba(0, 0, 0, 0.2);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.2);
+}
+#workspaces button.empty:hover {
+    color: rgba(0, 0, 0, 0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
+    transition: all 1s ease;
+}
+#workspaces button.empty.active {
+    color: @foreground;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 }
 
-#cpu,
-#bluetooth,
-#pulseaudio,
-#network,
-#clock,
-#battery,
-#custom-exit,
-#custom-openwebui,
-#custom-brightness,
+tooltip {
+    background: @background;
+    color: @foreground;
+    font-size: 10px;
+}
+
+#clock:hover,
+#custom-updates:hover,
+#custom-hypridle:hover,
+#custom-brightness:hover,
+#custom-spotify:hover,
+#custom-screenrecord:hover,
+#battery:hover,
+#network:hover,
+#custom-exit:hover,
+#bluetooth:hover,
+#cpu:hover,
+#pulseaudio:hover {
+    transition: all 0.3s ease;
+    color: @foreground;
+}
+
 #custom-hypridle,
-#custom-filemanager {
-    min-width: 12px;
-    margin: 0 8px;
-    font-size: 16px;
+#custom-brightness,
+#custom-spotify,
+#bluetooth,
+#battery,
+#network,
+#cpu,
+#pulseaudio {
+    padding: 0px 8px;
+    transition: all 0.3s ease;
+    color: @foreground;
+}
+
+#custom-updates,
+#custom-screenrecord,
+#clock {
+    padding: 0px 10px;
+    transition: all 0.3s ease;
+    color: @foreground;
+}
+
+#group-expand {
+    padding: 0px 5px;
+    transition: all 0.3s ease;
+}
+
+#custom-expand {
+    padding: 0px 5px;
+    color: alpha(@foreground, 0.8);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease;
+}
+
+#custom-expand:hover {
+    color: alpha(@foreground, 0.8);
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
 }
 
 #custom-hypridle.notactive {
     color: rgb(224, 137, 137);
-}
-tooltip {
-    background-color: alpha(@background, 0.9);
-    padding: 20px;
-    margin: 0px;
-}
-
-tooltip label {
-    color: @foreground;
 }

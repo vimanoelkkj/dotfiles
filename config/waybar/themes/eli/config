@@ -23,6 +23,11 @@
         "tooltip": false
     },
 
+    "tray": {
+        "icon-size": 15,
+        "spacing": 5
+    },
+
     "group/expand": {
         "orientation": "horizontal",
         "drawer": {
@@ -30,7 +35,7 @@
             "transition-to-left": true,
             "click-to-reveal": true
         },
-        "modules": ["custom/expand", "custom/filemanager"],
+        "modules": ["custom/expand", "custom/spotify"],
     },
 
     // Modules Left
