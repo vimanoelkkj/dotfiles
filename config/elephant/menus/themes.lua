@@ -1,5 +1,7 @@
+local _ = require("menus.i18n")._
+
 Name = "themes"
-NamePretty = "Themes"
+NamePretty = _("Themes")
 FixedOrder = true
 HideFromProviderlist = true
 Icon = "󰸌"
@@ -8,35 +10,35 @@ Parent = "menu"
 function GetEntries()
 	return {
 		{
-			Text = "System theme",
+			Text = _("System theme"),
 			Icon = "󰸌",
 			Actions = {
 				["change-theme"] = "walker --theme menus -m menus:system-themes -N",
 			},
 		},
 		{
-			Text = "Waybar theme",
+			Text = _("Waybar theme"),
 			Icon = "󰸌",
 			Actions = {
 				["change-waybar"] = "walker --theme menus -m menus:waybar-themes -N",
 			},
 		},
 		{
-			Text = "Fastfetch theme",
+			Text = _("Fastfetch theme"),
 			Icon = "󰸌",
 			Actions = {
 				["change-fastfetch"] = "walker --theme menus -m menus:fastfetch-themes -N",
 			},
 		},
 		{
-			Text = "Starship theme",
+			Text = _("Starship theme"),
 			Icon = "󰸌",
 			Actions = {
 				["change-starship"] = "walker --theme menus -m menus:starship-themes -N",
 			},
 		},
 		{
-			Text = "Cursor theme",
+			Text = _("Cursor theme"),
 			Icon = "󰸌",
 			Actions = {
 				["change-cursor"] = "walker --theme menus -m menus:cursor-themes -N",

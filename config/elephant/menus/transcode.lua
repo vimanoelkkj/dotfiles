@@ -1,5 +1,7 @@
+local _ = require("menus.i18n")._
+
 Name = "transcode"
-NamePretty = "Transcode"
+NamePretty = _("Transcode")
 FixedOrder = true
 HideFromProviderlist = true
 Icon = ""
@@ -8,14 +10,14 @@ Parent = "tools"
 function GetEntries()
 	return {
 		{
-			Text = "Transcode video",
+			Text = _("Transcode video"),
 			Icon = "",
 			Actions = {
 				["transcode-video"] = "ghostty --class=local.floating -e transcode-video",
 			},
 		},
 		{
-			Text = "Transcode image",
+			Text = _("Transcode image"),
 			Icon = "",
 			Actions = {
 				["transcode-image"] = "ghostty --class=local.floating -e transcode-image",

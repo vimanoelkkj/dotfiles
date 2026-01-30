@@ -1,76 +1,78 @@
+local _ = require("menus.i18n")._
+
 Name = "menu"
-NamePretty = "Menu"
+NamePretty = _("Menu")
 FixedOrder = true
 HideFromProviderlist = true
-Description = "Menu"
+Description = _("Menu")
 
 function GetEntries()
 	return {
 		{
-			Text = "Update",
+			Text = _("Update"),
 			Icon = "",
 			Actions = {
 				["update"] = "ghostty --class=local.floating -e update-perform",
 			},
 		},
 		{
-			Text = "Install package",
+			Text = _("Install package"),
 			Icon = "󰣇",
 			Actions = {
 				["manage-pkg"] = "ghostty --class=local.floating -e pkg-install",
 			},
 		},
 		{
-			Text = "Remove package",
+			Text = _("Remove package"),
 			Icon = "󰭌",
 			Actions = {
 				["manage-pkg"] = "ghostty --class=local.floating -e pkg-remove",
 			},
 		},
 		{
-			Text = "Change themes",
+			Text = _("Change themes"),
 			Icon = "󰸌",
 			Actions = {
 				["change-themes"] = "walker -t menus -m menus:themes -N",
 			},
 		},
 		{
-			Text = "Next background",
+			Text = _("Next background"),
 			Icon = "",
 			Actions = {
 				["change-bg"] = "theme-bg-next",
 			},
 		},
 		{
-			Text = "Capture",
+			Text = _("Capture"),
 			Icon = "",
 			Actions = {
 				["capture"] = "walker -t menus -m menus:capture -N",
 			},
 		},
 		{
-			Text = "Setup",
+			Text = _("Setup"),
 			Icon = "󰉉",
 			Actions = {
 				["setup"] = "walker -t menus -m menus:setup -N",
 			},
 		},
 		{
-			Text = "Tools",
+			Text = _("Tools"),
 			Icon = "",
 			Actions = {
 				["tools"] = "walker -t menus -m menus:tools -N",
 			},
 		},
 		{
-			Text = "Keybindings",
+			Text = _("Keybindings"),
 			Icon = "",
 			Actions = {
 				["keybindings"] = "walker -t menus -m menus:keybindings -N",
 			},
 		},
 		{
-			Text = "System",
+			Text = _("System"),
 			Icon = "󰐥",
 			Actions = {
 				["system"] = "walker -t menus -m menus:system -N",

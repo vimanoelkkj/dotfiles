@@ -1,5 +1,7 @@
+local _ = require("menus.i18n")._
+
 Name = "screenrecord"
-NamePretty = "Screenrecord"
+NamePretty = _("Screenrecord")
 FixedOrder = true
 HideFromProviderlist = true
 Icon = ""
@@ -8,31 +10,31 @@ Parent = "capture"
 function GetEntries()
 	return {
 		{
-			Text = "Region",
+			Text = _("Region"),
 			Actions = {
 				["region"] = "screenrecord",
 			},
 		},
 		{
-			Text = "Region + Audio",
+			Text = _("Region + Audio"),
 			Actions = {
 				["region_audio"] = "screenrecord region --with-audio",
 			},
 		},
 		{
-			Text = "Display",
+			Text = _("Display"),
 			Actions = {
 				["display"] = "screenrecord output",
 			},
 		},
 		{
-			Text = "Display + Audio",
+			Text = _("Display + Audio"),
 			Actions = {
 				["display_audio"] = "screenrecord output --with-audio",
 			},
 		},
 		{
-			Text = "Display + Webcam",
+			Text = _("Display + Webcam"),
 			Actions = {
 				["display_webcam"] = "screenrecord output --with-audio --with-webcam",
 			},
