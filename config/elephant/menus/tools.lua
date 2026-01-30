@@ -4,7 +4,6 @@ local is_pt = lang:match("^pt")
 local function _(text)
     local translations = {
         ["OCR"] = "OCR",
-        ["Ollama"] = "Ollama",
         ["Download video"] = "Baixar vídeo",
         ["Transcode"] = "Transcodificar",
         ["ISO to usb"] = "ISO para USB",
